@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    background-color:#383838;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.menu a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: orangered;
+    transition: 1.2s;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex div{
+    flex: 1 1 48%;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.flex div p {
+    margin: 11px 0 0 0;
+}
+
+.flex img {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    display: flex;
+    background-color:#383838;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #ffff;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffff;
+}
+
+
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1180px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.grid img{
+    max-width: 100%;
+}
+
+.grid > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+
+}
+
+.grid > div.propaganda {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: block;
+    background-color: bisque;
+    border-top: 10px solid tomato;
+    display: block;
+}
+
